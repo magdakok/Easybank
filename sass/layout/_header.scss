@@ -4,16 +4,41 @@
     background-repeat: no-repeat;
     background-position: 240% 60%;
     background-size: 82%;
-    overflow: hidden;
+    overflow-x: hidden;
+
+    @media only screen and (max-width: 62.5em) {
+        background-position: 262% 28%;
+    }
+    @media only screen and (max-width: 50em) {
+        background-image: url(../img/bg-intro-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 100%;
+    }
 
     .wrapper {
         padding: 15rem 0;
         display: flex;
-  
+
+        @media only screen and (max-width: 62.5em) {
+            padding: 10rem 0;
+        }
+        @media only screen and (max-width: 50em) {
+            padding: 50rem 0 0 7rem;
+        }
     }
 
     &__text-box {
-        flex: 0 0 40%;
+        flex: 0 1 40%;
+
+        @media only screen and (max-width: 62.5em) {
+            flex: 0 0 50%;
+        }
+        @media only screen and (max-width: 50em) {
+            flex: 0 1 100%;
+            text-align: center;
+        }
+
         & > * {
             margin-bottom: 2.5rem;
         }
