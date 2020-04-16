@@ -14,6 +14,7 @@ html {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow: hidden;
 }
 
 body {
@@ -161,7 +162,7 @@ body {
   background-image: url(../img/bg-intro-desktop.svg);
   background-repeat: no-repeat;
   background-position: 240% 60%;
-  background-size: 80%;
+  background-size: 82%;
   overflow: hidden;
 }
 
@@ -284,6 +285,7 @@ body {
 
 .nav {
   background-color: #ffffff;
+  position: relative;
   display: block;
   z-index: 999;
 }
@@ -348,6 +350,12 @@ body {
 
 .nav__link:hover::after, .nav__link:active::after {
   opacity: 1;
+}
+
+.mockup {
+  position: absolute;
+  top: -8rem;
+  right: -12rem;
 }
 
 .wrapper {
