@@ -4,7 +4,6 @@
     }
 
     &__box {
-    
         margin-top: 5rem;
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
@@ -16,6 +15,14 @@
         background-color: $color-white;
         border-radius: 3px;
         overflow: hidden;
+        cursor: pointer;
+
+        &:hover,
+        &:active {
+            .heading-4 {
+                color: $color-hover;
+            }
+        }
 
         &__img-box {
             width: 100%;
