@@ -1,0 +1,30 @@
+.header {
+    background-color: $color-gray-light;
+    background-image: url(/img/bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 285% 60%;
+    background-size: 80%;
+    overflow: hidden;
+
+    .wrapper {
+        padding: 15rem 0;
+        display: flex;
+    }
+
+    &__text-box {
+        flex: 0 0 40%;
+        & > * {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    // &__image {
+    //     // width: 100%;
+        
+    // }
+
+    // &__image-box {
+    //     flex: 0 0 60%;
+    
+    // }
+}

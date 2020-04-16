@@ -1,0 +1,39 @@
+.wrapper {
+    max-width: 111rem;
+    margin: 0 auto;
+}
+
+.features {
+    background-color: $color-gray;
+    z-index: 5;
+
+    .wrapper {
+        padding: 9rem 0;
+    }
+
+    &__box {
+        display: flex;
+        margin-top: 7rem;
+    }
+
+    .heading-3 {
+        margin: 2.3rem 0;
+    }
+
+    .feature {
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+
+    }
+}
+
+.articles {
+    background-color: $color-gray-light;
+
+}
+
+.footer {
+    background-color: $color-primary;
+
+}

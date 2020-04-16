@@ -1,0 +1,73 @@
+.footer {
+    color: $color-white;
+            a:link,
+            a:visited {
+                transition: all 0.3s;
+                text-decoration: none;
+                color: $color-white;
+            }
+            a:hover,
+            a:active {
+                color: $color-hover;
+            }
+
+    .wrapper {
+        padding: 5rem 0;
+        height: 20rem;
+
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    &-social {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__social-box {
+        cursor: pointer;
+        margin-right: 15rem;
+
+        & > *:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+    .icon path { 
+        transition: all 0.3s;
+        &:hover,
+        &:active {
+            fill: $color-hover;
+        }
+    }
+
+    &-nav {
+        list-style: none;
+        column-count: 2;
+        column-gap: 3.5rem;
+        margin-right: auto;
+        align-self: center;
+
+        &__link {
+            line-height: 2.5;
+        }
+    }
+
+    &-copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+        color: $color-gray-dark;
+    }
+
+    .attribution {
+        text-transform: uppercase;
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 1.5px;
+        padding-bottom: 3rem;
+    }
+}
