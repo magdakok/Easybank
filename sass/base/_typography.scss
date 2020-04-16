@@ -10,18 +10,30 @@ body {
     font-weight: 300;
     color: $color-primary;
     line-height: 1.2;
+
+    @media only screen and (max-width: 50em) {
+       font-size: 3.5rem;
+    }
 }
 
 .heading-2 {
     font-size: 3.5rem;
     font-weight: 300;
     color: $color-primary;
+
+    @media only screen and (max-width: 50em) {
+        font-size: 2.5rem;
+     }
 }
 
 .heading-3 {
     font-size: 2.3rem;
     font-weight: 300;
     color: $color-primary;
+
+    @media only screen and (max-width: 50em) {
+        font-size: 1.8rem;
+     }
 }
 
 .heading-4 {
@@ -32,6 +44,10 @@ body {
     cursor: pointer;
     transition: all 0.3s;
 
+    @media only screen and (max-width: 50em) {
+        font-size: 1.5rem;
+     }
+
     &:hover,
     &:active {
         color: $color-hover;
@@ -41,5 +57,9 @@ body {
 .paragraph {
     font-size: 1.6rem;
     color: $color-gray-dark;
+
+    @media only screen and (max-width: 50em) {
+        font-size: 1.6rem;
+    }
     
 }
