@@ -1,6 +1,6 @@
 .header {
     background-color: $color-gray-light;
-    background-image: url(/img/bg-intro-desktop.svg);
+    background-image: url(img/bg-intro-desktop.svg);
     background-repeat: no-repeat;
     background-position: 285% 60%;
     background-size: 80%;
@@ -17,14 +17,4 @@
             margin-bottom: 2.5rem;
         }
     }
-
-    // &__image {
-    //     // width: 100%;
-        
-    // }
-
-    // &__image-box {
-    //     flex: 0 0 60%;
-    
-    // }
 }
