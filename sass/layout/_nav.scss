@@ -1,5 +1,6 @@
 .nav {
     background-color: $color-white;
+    position: relative;
     
     display: block;
     z-index: 999;
@@ -60,4 +61,10 @@
             }
         }
     }
+}
+
+.mockup {
+    position: absolute;
+    top: -8rem;
+    right: -12rem;
 }
