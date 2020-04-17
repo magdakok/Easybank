@@ -43,7 +43,7 @@ body {
   color: #2d314d;
 }
 
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 73.125em) {
   .heading-2 {
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -203,7 +203,7 @@ body {
 
 @media only screen and (max-width: 73.125em) {
   .articles .article {
-    width: 36rem;
+    width: 30rem;
   }
 }
 
@@ -238,6 +238,82 @@ body {
 
 .articles .article__text-box .paragraph {
   font-size: 1.2rem;
+}
+
+.features {
+  background-color: #f3f4f6;
+  z-index: 5;
+}
+
+.features .wrapper {
+  padding: 9rem 0;
+}
+
+@media only screen and (max-width: 73.125em) {
+  .features .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .features .wrapper {
+    text-align: center;
+  }
+}
+
+.features__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin-top: 7rem;
+}
+
+@media only screen and (max-width: 73.125em) {
+  .features__box {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    row-gap: 5rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .features__box {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.features .heading-3 {
+  margin: 2.3rem 0;
+}
+
+.features .feature:not(:last-child) {
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 73.125em) {
+  .features .feature {
+    width: 36rem;
+    padding: 0 3rem;
+  }
+  .features .feature:not(:last-child) {
+    margin-right: 0;
+  }
 }
 
 .header {
@@ -470,6 +546,12 @@ body {
   z-index: 999;
 }
 
+@media only screen and (max-width: 50em) {
+  .nav {
+    display: none;
+  }
+}
+
 .nav .wrapper {
   padding: 1.8rem 0;
   display: -webkit-box;
@@ -488,12 +570,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media only screen and (max-width: 50em) {
-  .nav__list {
-    display: none;
-  }
 }
 
 .nav__item:not(:last-child) {
@@ -543,6 +619,7 @@ body {
   top: -8%;
   right: -12%;
   z-index: 50;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 62.5em) {
@@ -594,80 +671,6 @@ body {
 @media only screen and (max-width: 73.125em) {
   .wrapper {
     margin: 0 3rem;
-  }
-}
-
-.features {
-  background-color: #f3f4f6;
-  z-index: 5;
-}
-
-.features .wrapper {
-  padding: 9rem 0;
-}
-
-@media only screen and (max-width: 73.125em) {
-  .features .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media only screen and (max-width: 50em) {
-  .features .wrapper {
-    text-align: center;
-  }
-}
-
-.features__box {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  margin-top: 7rem;
-}
-
-@media only screen and (max-width: 73.125em) {
-  .features__box {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    row-gap: 5rem;
-    text-align: center;
-  }
-}
-
-@media only screen and (max-width: 50em) {
-  .features__box {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-.features .heading-3 {
-  margin: 2.3rem 0;
-}
-
-.features .feature:not(:last-child) {
-  margin-right: 2rem;
-}
-
-@media only screen and (max-width: 73.125em) {
-  .features .feature {
-    width: 36rem;
-  }
-  .features .feature:not(:last-child) {
-    margin-right: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
