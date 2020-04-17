@@ -15,6 +15,20 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.nav-background {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #2d314d), to(transparent));
+  background-image: linear-gradient(to bottom, #2d314d 15%, transparent);
+  opacity: 0;
 }
 
 body {
@@ -41,12 +55,12 @@ body {
   font-size: 3.5rem;
   font-weight: 300;
   color: #2d314d;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 73.125em) {
   .heading-2 {
     font-size: 3rem;
-    margin-bottom: 2rem;
   }
 }
 
@@ -341,6 +355,7 @@ body {
     display: block;
     position: absolute;
     width: 100vw;
+    z-index: 0;
   }
 }
 
@@ -546,10 +561,28 @@ body {
   z-index: 999;
 }
 
+.nav__box .hamburger-input:checked ~ .nav__list {
+  display: block;
+}
+
 @media only screen and (max-width: 50em) {
-  .nav {
+  .nav .btn-cta {
     display: none;
   }
+}
+
+.nav .hamburger-label {
+  display: none;
+}
+
+@media only screen and (max-width: 50em) {
+  .nav .hamburger-label {
+    display: inline-block;
+  }
+}
+
+.nav .hamburger-input {
+  display: none;
 }
 
 .nav .wrapper {
@@ -572,8 +605,41 @@ body {
   display: flex;
 }
 
+@media only screen and (max-width: 50em) {
+  .nav__list {
+    display: none;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #ffffff;
+    width: 90%;
+    top: 8rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .nav__item {
+    padding: 1rem 0;
+  }
+}
+
 .nav__item:not(:last-child) {
   margin-right: 3rem;
+}
+
+@media only screen and (max-width: 50em) {
+  .nav__item:not(:last-child) {
+    margin-right: 0;
+  }
 }
 
 .nav__link {
@@ -602,8 +668,21 @@ body {
   transition: all 0.4s;
 }
 
+@media only screen and (max-width: 50em) {
+  .nav__link::after {
+    content: none;
+    display: none;
+  }
+}
+
 .nav__link:link, .nav__link:visited {
   color: #9698a6;
+}
+
+@media only screen and (max-width: 50em) {
+  .nav__link:link, .nav__link:visited {
+    color: #2d314d;
+  }
 }
 
 .nav__link:hover, .nav__link:active {
@@ -618,7 +697,7 @@ body {
   position: absolute;
   top: -8%;
   right: -12%;
-  z-index: 50;
+  z-index: 20;
   overflow: hidden;
 }
 
@@ -631,8 +710,9 @@ body {
 
 @media only screen and (max-width: 50em) {
   .mockup {
-    top: -10%;
+    top: -19%;
     left: 0;
+    right: 0;
     max-width: 76.7rem;
     max-height: 93.9rem;
     display: -webkit-box;
