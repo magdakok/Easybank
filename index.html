@@ -18,6 +18,10 @@
                 <div class="logo__box">
                     <img src="img/logo.svg" alt="Easybank logo" class="logo">
                 </div>
+                <div class="nav__box">
+                    <label class="hamburger-label" for="hamburger">&#9776;</label>
+                    <input class="hamburger-input" type="checkbox" id="hamburger" onclick="toggleMenu()">
+
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">About</a></li>
@@ -25,11 +29,13 @@
                         <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">Careers</a></li>
                     </ul>
+                </div>
                     <a href="#" class="btn-cta">Request invite</a>
             </div>
         </nav>
 
-        <div class="mockup"><img class="mockup__img" src="img/image-mockups.png" alt="Mockup"></div>
+        <div class="nav-background"></div>
+            <div class="mockup"><img class="mockup__img" src="img/image-mockups.png" alt="Mockup"></div>
 
         <header class="header">
             <div class="wrapper">
@@ -164,7 +170,8 @@
                 Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>, 
                 Coded by <a href="https://github.com/magdakok">Magda Kokot</a>
               </div>
-        </footer>
-        
+            </footer>
+
     </body>
+    <script src="js/script.js"></script>
 </html>

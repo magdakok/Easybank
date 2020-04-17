@@ -8,7 +8,7 @@
     position: relative;
 
     @media only screen and (max-width: 62.5em) {
-        background-position: 262% 28%;
+        background-position: 262% 28%; 
     }
     @media only screen and (max-width: 50em) {
         background-image: none;
@@ -17,6 +17,7 @@
             display: block;
             position: absolute;
             width: 100vw;
+            z-index: 0;
         }
     }
 
@@ -51,3 +52,4 @@
         }
     }
 }
+
