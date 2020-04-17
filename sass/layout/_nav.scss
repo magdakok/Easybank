@@ -5,6 +5,10 @@
     display: block;
     z-index: 999;
 
+    @media only screen and (max-width: 50em) {
+        display: none;
+    }
+
     .wrapper {
         padding: 1.8rem 0;
 
@@ -16,11 +20,6 @@
     &__list {
         list-style: none;
         display: flex;
-
-        @media only screen and (max-width: 50em) {
-            display: none;
-        }
-
     }
 
     &__item {
@@ -71,6 +70,7 @@
     top: -8%;
     right: -12%;
     z-index: 50;
+    overflow: hidden;
 
     @media only screen and (max-width: 62.5em) {
         top: 18%;
