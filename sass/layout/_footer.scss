@@ -14,10 +14,17 @@
 
     .wrapper {
         padding: 5rem 0;
-        height: 20rem;
+        min-height: 20rem;
 
         display: flex;
         justify-content: space-between;
+
+        @media only screen and (max-width: 62.5em) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 0;
+        }
         
     }
 
@@ -30,6 +37,10 @@
     &__social-box {
         cursor: pointer;
         margin-right: 15rem;
+
+        @media only screen and (max-width: 62.5em) {
+            margin: 2rem 0 0 0;
+        }
 
         & > *:not(:last-child) {
             margin-right: 1rem;
@@ -50,6 +61,10 @@
         column-gap: 3.5rem;
         margin-right: auto;
         align-self: center;
+        @media only screen and (max-width: 62.5em) {
+            margin: 2rem auto;
+            text-align: center;
+        }
 
         &__link {
             line-height: 2.5;
@@ -62,6 +77,16 @@
         justify-content: space-between;
         align-items: flex-end;
         color: $color-gray-dark;
+        @media only screen and (max-width: 62.5em) {
+            align-items: center;
+            
+        }
+
+        .btn-cta {
+            @media only screen and (max-width: 62.5em) {
+                margin-bottom: 2rem;
+            }
+        }
     }
 
     .attribution {
