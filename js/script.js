@@ -17,3 +17,12 @@ function toggleMenu() {
         navList.style.display = 'none';
     }
 }
+
+var navLinks = document.querySelectorAll('.nav__link');
+for (var i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener('click', function(){
+        navBackground.style.opacity='0';
+        navList.style.display = 'none';
+    });
+}
+
