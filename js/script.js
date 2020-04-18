@@ -1,19 +1,19 @@
-var navBackground = document.querySelector('.nav-background');
-var navList = document.querySelector('.nav__list');
+    const navBackground = document.querySelector('.nav-background');
+    const navList = document.querySelector('.nav__list');
+    const hamburger = document.querySelector('.hamburger-label');
+    const navLink = document.querySelectorAll('.nav__link');
 
-function toggleMenu() {
-    var checkBoxValue = document.getElementById('hamburger').checked;
-    var navList = document.querySelector('.nav__list');
-    if (checkBoxValue) {
-        navBackground.style.opacity='1';
-        navList.style.display = 'block';
-        navBackground.addEventListener('click', function(){
-            navBackground.style.opacity = '0';
-            navList.style.display = 'none';
-            checkBoxValue = false;
-        });
-    } else {
-        navBackground.style.opacity='0';
-        navList.style.display = 'none';
+    hamburger.addEventListener('click', function(){
+        navBackground.classList.toggle('nav-background-opacity');
+        navList.classList.toggle('show-mobile-nav');
+    });
+
+    navBackground.addEventListener('click', hideNav);
+    navList.addEventListener('click', hideNav);
+
+
+    function hideNav() {
+        navBackground.classList.remove('nav-background-opacity');
+        navList.classList.remove('show-mobile-nav');
     }
-}
+

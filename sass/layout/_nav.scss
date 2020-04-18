@@ -5,11 +5,8 @@
     display: block;
     z-index: 999;
 
-    &__box {
-        .hamburger-input:checked ~ .nav__list {
-            display: block;
-        }
-
+    .show-mobile-nav {
+        display: block;
     }
 
     .btn-cta {
