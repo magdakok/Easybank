@@ -17,7 +17,7 @@
         body.classList.toggle('no-overflow-y');
 
         //it turns into close icon
-        hamburgerSvg.src="/img/icon-close.svg";
+        hamburgerSvg.src="img/icon-close.svg";
     });
 
     //so when clicked on close icon
@@ -25,7 +25,7 @@
         
         hamburgerClose.addEventListener('click', function(){
         //i want normal hamburger icon back, but it doesn't work
-        hamburgerSvg.src="/img/icon-hamburger.svg";
+        hamburgerSvg.src="img/icon-hamburger.svg";
     });
 }
 
