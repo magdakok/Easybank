@@ -15,6 +15,7 @@
         }
         @media only screen and (max-width: 50em) {
             text-align: center;
+            padding: 5rem 0;
         }
         
     }
@@ -37,6 +38,9 @@
 
     .heading-3 {
         margin: 2.3rem 0;
+        @media only screen and (max-width: 62.5em) {
+            margin: 1.5rem 0;
+        }
     }
 
     .feature {
