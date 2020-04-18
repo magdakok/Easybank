@@ -378,14 +378,9 @@ body {
 
 @media only screen and (max-width: 50em) {
   .header {
-    background-image: none;
-  }
-  .header::before {
-    content: url(../img/bg-intro-mobile.svg);
-    display: block;
-    position: absolute;
-    width: 100vw;
-    z-index: 0;
+    background-image: url(../img/bg-intro-mobile.svg);
+    background-position: top;
+    background-size: contain;
   }
 }
 
