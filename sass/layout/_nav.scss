@@ -1,6 +1,5 @@
 .nav {
     background-color: $color-white;
-    position: relative;
     
     display: block;
     z-index: 999;
@@ -28,6 +27,7 @@
     }
     .wrapper {
         padding: 1.8rem 0;
+        background-color: $color-white;
 
         display: flex;
         justify-content: space-between;
@@ -106,38 +106,6 @@
             &::after {
                 opacity: 1;
             }
-        }
-    }
-}
-
-.mockup {
-    position: absolute;
-    top: -8%;
-    right: -12%;
-    z-index: 20;
-    overflow: hidden;
-
-    @media only screen and (max-width: 62.5em) {
-        top: 18%;
-        right: 3%;
-    }
-
-    @media only screen and (max-width: 50em) {
-        top: -10%;
-        max-width: 100vw;
-    }
-    
-
-    &__img {
-        max-width: 60vw;
-        display: inline-block;
-
-        @media only screen and (max-width: 62.5em) {
-            max-width: 40vw;
-        }
-        @media only screen and (max-width: 50em) {
-            max-width: none;
-            width: 100%;
         }
     }
 }

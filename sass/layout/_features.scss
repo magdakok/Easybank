@@ -1,6 +1,14 @@
 .features {
     background-color: $color-gray;
     z-index: 5;
+    display: block;
+    margin-top: -30rem;
+    @media only screen and (max-width: 73.125em) {
+        margin-top: -10rem;
+    }
+    @media only screen and (max-width: 62.5em) {
+        margin-top: -20rem;
+    }
 
     .wrapper {
         padding: 9rem 0;
