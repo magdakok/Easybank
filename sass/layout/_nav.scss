@@ -8,6 +8,10 @@
         display: block;
     }
 
+    .logo {
+        margin-top: 6px;
+    }
+
     .btn-cta {
         @media only screen and (max-width: 50em) {
             display: none;

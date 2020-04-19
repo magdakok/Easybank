@@ -671,6 +671,10 @@ body {
   display: block;
 }
 
+.nav .logo {
+  margin-top: 6px;
+}
+
 @media only screen and (max-width: 50em) {
   .nav .btn-cta {
     display: none;
